@@ -2,6 +2,6 @@ name: Workflow Error # ワークフロー名
 on: push # イベント（プッシュ時に起動）
 jobs: # ジョブの定義
   hello: # ジョブID
-    run-on: ubuntu-latest # ランナー（Ubuntuで実行）
+    runs-on: ubuntu-latest # ランナー（Ubuntuで実行）
     steps: # ステップの定義
       - run: date
