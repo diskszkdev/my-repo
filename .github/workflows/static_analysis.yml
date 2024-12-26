@@ -2,9 +2,9 @@ name: Static analysis
 on:
     pull_request:
         paths: ['.github/workflows/*.yml', '.github/workflows/*.yaml']
-defaults: # デフォルトシェル
+defaults: # デフォルトシェルを指定
     run:
-        shell: bash
+        shell: bash # デフォルトシェルはもともとbashだが明示的に指定することでパイプ処理中のエラーを拾えるようになるのでデバッグしやすくなる
 concurrency: # 自動キャンセル
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
