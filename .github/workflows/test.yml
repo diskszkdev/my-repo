@@ -1,4 +1,5 @@
 name: Build And Test
+run-name: Build And Test by @${{ github.actor }}
 on:
     push:
         paths:
@@ -13,12 +14,12 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
             - name: Setup .NET Core
-              uses: actions/setup-dotnet@v4
+              uses: actions/setup-dotnet@v4 # .NET CLIをセットアップする
               with:
                     dotnet-version: ${{ env.DOTNET_VERSION }}
             - name: Install dependencies
-              run: dotnet restore
+              run: dotnet restore # 依存関係を復元する
             - name: Build
-              run: dotnet build --configuration Release --no-restore
+              run: dotnet build --configuration Release --no-restore # ビルドする リリースビルド 暗黙的な復元を無効化
             - name: Test
-              run: dotnet test --no-restore --verbosity normal
+              run: dotnet test --no-restore --verbosity normal # テストする 暗黙的な復元を無効化 コマンド詳細レベルはノーマル
