@@ -23,6 +23,7 @@ public class UnitTest1
     [TestMethod]
     public void TestMethod3()
     {
+        var d = DateTime.Now;
         var c = new Class1();
         Assert.AreEqual(6, c.Multiply(2, 3));
     }
