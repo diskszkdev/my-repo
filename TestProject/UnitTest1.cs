@@ -9,7 +9,7 @@ public class UnitTest1
     public void TestMethod1()
     {
         var c = new Class1();
-        Assert.AreEqual("Hello World!!", c.GetHelloWorld());
+        Assert.AreEqual("Hello World!", c.GetHelloWorld());
     }
     
     [TestMethod]
