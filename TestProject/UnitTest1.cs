@@ -24,6 +24,6 @@ public class UnitTest1
     public void TestMethod3()
     {
         var c = new Class1();
-        Assert.AreEqual(6, c.Multiply(2, 3));
+        Assert.AreEqual(7, c.Multiply(2, 3));
     }
 }
