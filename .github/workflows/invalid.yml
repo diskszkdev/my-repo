@@ -1,0 +1,7 @@
+name: Invalid
+on: push
+jobs:
+  invalid:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
