@@ -16,4 +16,9 @@ public class Class1
     {
         return a * b;
     }
+    
+    public int Divide(int a, int b)
+    {
+        return a / b;
+    }
 }
