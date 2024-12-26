@@ -19,4 +19,11 @@ public class UnitTest1
         var c = new Class1();
         Assert.AreEqual(3, c.Sum(1, 2));
     }
+    
+    [TestMethod]
+    public void TestMethod3()
+    {
+        var c = new Class1();
+        Assert.AreEqual(6, c.Multiply(2, 3));
+    }
 }

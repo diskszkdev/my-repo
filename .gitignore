@@ -1,1 +1,9 @@
 /.idea
+/GithubLibrary/bin
+/GithubLibrary/obj
+/TestProject/bin
+/TestProject/obj
+GithubLibrary/obj/
+GithubLibrary/bin/
+TestProject/obj/
+TestProject/bin/
