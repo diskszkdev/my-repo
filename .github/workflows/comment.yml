@@ -1,7 +1,7 @@
 name: Comment
 on: pull_request
 jobs:
-    comment2:
+    comment:
         runs-on: ubuntu-latest
         permissions: # GITHUB_TOKENの権限を指定
             pull-requests: write # プルリクエストの書き込みを許可
