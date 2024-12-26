@@ -1,5 +1,9 @@
 name: Test
-on: push
+on:
+    push:
+        paths:
+        - '**.cs'
+        - '**.csproj'
 jobs:
     test:
         runs-on: ubuntu-latest
