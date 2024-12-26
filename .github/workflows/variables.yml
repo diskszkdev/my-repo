@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     env:
       USERNAME: ${{ vars.USERNAME }} # Variablesの参照
-    step:
+    steps:
       - run: echo "${USERNAME}"
