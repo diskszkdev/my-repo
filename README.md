@@ -1,4 +1,4 @@
-# my-repo source
+# my-repo
 
 - 単体テストの実行  
 https://learn.microsoft.com/ja-jp/dotnet/devops/dotnet-test-github-action
