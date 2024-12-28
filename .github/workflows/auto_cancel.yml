@@ -1,0 +1,11 @@
+name: Auto Cancel
+on: pull_request
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }} # 同じプルリクエストの同じワークフローが複数起動した場合にキャンセル
+    cancel-in-progress: true # 同一グループのワークフローが実行中ならキャンセル
+jobs:
+    sleep:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "グループ：${{ github.workflow }}-${{ github.ref }}
+            - run: sleep 120
