@@ -1,0 +1,22 @@
+name: .NET Static Analysis
+run-name: .NET Static Analysis by @${{ github.actor }}
+on:
+    pull_request:
+        paths:
+        - '**.cs'
+        - '**.csproj'
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+        - name: Setup .NET
+          uses: actions/setup-dotnet@v4
+          with:
+              dotnet-version: 8.0.x
+        - name: Install dependencies
+          run: dotnet restore # 依存関係を復元する
+        - name: Build
+          run: |
+            dotnet build --no-restore -warnaserror -clp:NoSummary # ビルドする 暗黙的な復元を無効化 エラーを警告として扱う サマリーを非表示
