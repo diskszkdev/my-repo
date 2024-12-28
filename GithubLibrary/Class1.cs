@@ -34,3 +34,4 @@ public class Demo : Exception
     protected static readonly int _item;
     public static int item { get { return _item; } }
 }
+
