@@ -2,36 +2,28 @@
 
 public class Class1
 {
-    public string GetHelloWorld()
+    public static string GetHelloWorld()
     {
         return "Hello World!";
     }
 
-    public int Sum(int a, int b)
+    public static int Sum(int a, int b)
     {
         return a + b;
     }
 
-    public int Multiply(int a, int b)
+    public static int Multiply(int a, int b)
     {
         return a * b;
     }
 
-    public int Divide(int a, int b)
+    public static int Divide(int a, int b)
     {
         return a / b;
     }
 
-    public int WarmMethod()
+    public static int WarmMethod()
     {
         return 0;
     }
 }
-
-public class Demo : Exception
-{
-    public static void Initialize(int size) { }
-    protected static readonly int _item;
-    public static int item { get { return _item; } }
-}
-
