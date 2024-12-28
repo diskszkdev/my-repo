@@ -28,7 +28,7 @@ public class Class1
     }
 }
 
-public class demo : Exception
+public class Demo : Exception
 {
     public static void Initialize(int size) { }
     protected static readonly int _item;
