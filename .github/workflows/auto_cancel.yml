@@ -7,5 +7,5 @@ jobs:
     sleep:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "グループ：${{ github.workflow }}-${{ github.ref }}
+            - run: echo "グループ：${{ github.workflow }}-${{ github.ref }}"
             - run: sleep 120
