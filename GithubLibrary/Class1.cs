@@ -2,23 +2,28 @@
 
 public class Class1
 {
-    public string GetHelloWorld()
+    public static string GetHelloWorld()
     {
         return "Hello World!";
     }
-    
-    public int Sum(int a, int b)
+
+    public static int Sum(int a, int b)
     {
         return a + b;
     }
-    
-    public int Multiply(int a, int b)
+
+    public static int Multiply(int a, int b)
     {
         return a * b;
     }
-    
-    public int Divide(int a, int b)
+
+    public static int Divide(int a, int b)
     {
         return a / b;
+    }
+
+    public static int WarmMethod()
+    {
+        return 0;
     }
 }
