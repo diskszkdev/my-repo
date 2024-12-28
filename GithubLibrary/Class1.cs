@@ -22,7 +22,7 @@ public class Class1
         return a / b;
     }
 
-    public int _warmMethod()
+    public int WarmMethod()
     {
         return 0;
     }
