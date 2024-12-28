@@ -27,3 +27,10 @@ public class Class1
         return 0;
     }
 }
+
+public class demo : Exception
+{
+    public static void Initialize(int size) { }
+    protected static readonly int _item;
+    public static int item { get { return _item; } }
+}
