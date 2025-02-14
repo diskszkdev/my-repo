@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     # ソースコードの読み込みを明示的に許可する
     # 必要最低限のパーミッションを許可する
-    #permissions:
-    #  contents: read
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - run: echo "hello"
-
