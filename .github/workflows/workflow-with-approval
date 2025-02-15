@@ -1,0 +1,16 @@
+name: Workflow with Approval
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Job 1 completed."
+  deploy:
+    runs-on: ubuntu-latest
+    needs: job1
+    environment:
+      name: test
+    steps:
+      - name: Deployment Step
+        run: echo "Deployment approved and running."
